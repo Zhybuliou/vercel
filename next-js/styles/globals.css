@@ -1,0 +1,385 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+html,
+body {
+  background-image: url('http://lukedowding.com/img/space.jpg');
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#__next {
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: 'Star Wars', sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  height: 100px;
+  padding: 0px 20px 0px 20px;
+  flex-wrap: wrap;
+  font-family: 'Star Wars', sans-serif;
+}
+
+.logo {
+  padding: 5px;
+}
+.logo-link {
+  font-size: 42px;
+}
+.text-style {
+  color: black;
+  text-shadow:
+    -3px 0 #ffe81f,
+    0 3px #ffe81f,
+    3px 0 #ffe81f,
+    0 -3px #ffe81f;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.logo-link:hover {
+  color: rgb(160, 6, 6);
+  transition: 0.3s ease-in;
+}
+.search-block {
+  display: flex;
+  align-items: center;
+  align-items: baseline;
+}
+
+.search-block-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  width: 300px;
+  margin-right: 10px;
+  border: 4px solid #ffe81f;
+  border-radius: 15px;
+  outline: transparent;
+  padding: 5px 10px 5px 10px;
+  background-color: #ccc;
+  font-family: 'Star Wars', sans-serif;
+}
+.search-block-button,
+.button-error,
+.page-error-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: 4px solid #ffe81f;
+  border-radius: 14px;
+  outline: transparent;
+  padding: 5px;
+  font-family: 'Star Wars', sans-serif;
+  background-color: #ccc;
+  transition: 0.3s ease-in;
+  color: black;
+}
+.search-block-button:hover,
+.button-error:hover,
+.page-error-reset:hover {
+  cursor: pointer;
+  background-color: rgb(160, 6, 6);
+  transition: 0.3s ease-in;
+}
+
+.home-page,
+.page-error {
+  background-color: #87818194;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home-page {
+  position: relative;
+}
+.home-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  flex-wrap: wrap;
+}
+.home-page h1 {
+  text-align: center;
+}
+.home-page-content-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+.home-page-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+.loading {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loading img {
+  height: auto;
+  width: 350px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
+.wrapper-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  max-width: 1136px;
+  height: auto;
+
+  border-radius: 0px 0px 20px 20px;
+}
+.card {
+  transition: ease all 0.3s;
+  width: 250px;
+  border-radius: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+.card a {
+  text-decoration: none;
+}
+.wrapper-card {
+  border-radius: 20px;
+  margin: 20px 10px 10px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: wheat;
+  box-shadow: 0 0 20px 10px rgba(25, 25, 25, 0.1);
+  transition: ease all 0.3s;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+}
+.card_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0px 0px;
+  transition: ease all 0.3s;
+}
+.card-info {
+  height: 80px;
+  display: block;
+  padding: 20px 10px 5px 10px;
+  box-sizing: border-box;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.date_ {
+  font-family: 'Roboto', sans-serif;
+}
+.card-info h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.page-not-found,
+.page-error {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.page-not-found-image img,
+.page-error-image img {
+  width: 300px;
+}
+.page-not-found-content {
+  font-size: 24px;
+  text-align: center;
+}
+.page-error {
+  flex-wrap: wrap-reverse;
+  margin-top: 100px;
+  height: 500px;
+}
+.page-error-content h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-error-reset {
+  margin: 20px auto 0px auto;
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
+}
+.pagination-block {
+  display: flex;
+  align-items: baseline;
+}
+.character-wrapper {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000091;
+  transition: 0.5s ease-in;
+}
+.character-wrapper:hover {
+  cursor: pointer;
+}
+.character-card-wrapper {
+  position: relative;
+  z-index: 100;
+  background-color: wheat;
+  width: 600px;
+  margin: 20px 10px 10px 10px;
+  border-radius: 15px 15px 15px 15px;
+  transition: 0.5s ease-in;
+}
+.character-card_closed {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  padding: 0 4px 0 4px;
+  text-decoration: none;
+  color: #000;
+  background-color: #ccc;
+  font-size: 22px;
+  font-weight: 800;
+  border: 4px solid #ffe81f;
+  border-radius: 14px;
+  transition: 0.3s ease-in;
+}
+.character-card_closed:hover {
+  cursor: pointer;
+  background-color: rgb(160, 6, 6);
+  transition: 0.3s ease-in;
+}
+
+.character-card_img {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 0px 0px;
+  background-position: center;
+}
+.character-card_planet {
+  margin: 10px auto;
+  width: 50%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  background-position: center;
+}
+
+.character-card-content {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+}
+.character-card-content h1 {
+  font-weight: 800;
+}
+.character-card-description {
+  padding: 15px;
+}
+.character-card-description ul {
+  list-style-type: none;
+  font-size: 22px;
+}
+.select-input-characters-label select {
+  color: #545e6f;
+  background: #f0f0f0;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 18px;
+  padding: 0px 6px 0px 6px;
+  border-radius: 8px;
+  font-weight: 800;
+  border: solid 3px #ffe81f;
+}
+.select-input-characters-label label {
+  color: #fafbfd;
+  font-family: 'Star Wars', sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-page-content-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+  .logo-link {
+    font-size: 34px;
+  }
+  .search-block-input {
+    height: 25px;
+    width: 200px;
+    margin-right: 10px;
+    border: 4px solid #ffe81f;
+    padding: 5px 10px 5px 10px;
+  }
+  .home-page-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .search-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .search-block-input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header {
+    justify-content: center;
+  }
+}
+.navigation-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0006;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 101;
+}
